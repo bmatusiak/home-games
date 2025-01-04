@@ -10,6 +10,7 @@ module.exports = {
     publicPath: '/home-games/', 
     clean: true, 
   },
+  devtool:"source-map",
   module: {
     rules: [
       {
@@ -32,7 +33,7 @@ module.exports = {
     static: {
       directory: path.join(__dirname, 'public'),
     },
-    compress: true,
+    // compress: true,
     port: 9000,
   },
 };

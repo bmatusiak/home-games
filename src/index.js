@@ -1,6 +1,6 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
-import Home from './components/Home.jsx';
+import HomeGamesIntro from './intro';
 
 import 'bootstrap/dist/css/bootstrap.min.css'; 
 import 'bootstrap/dist/js/bootstrap.bundle.min.js'; 
@@ -10,6 +10,7 @@ const root = createRoot(rootElement);
 
 root.render(
     <React.StrictMode>
-        <Home />
+        <HomeGamesIntro />
     </React.StrictMode>
 );
+
