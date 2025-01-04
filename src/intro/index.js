@@ -13,9 +13,16 @@ gamesList.forEach((value) => {
 const HomeGamesIntro = () => {
 
     const [selected, set_Selected] = useState("");
-    if (selected == "GamesList") return (<SelectGame list={gamesList} onClick={(listItem) => {
-        set_Selected(listItem.name);
-    }} />);
+    if (selected == "GamesList")
+        return (<SelectGame
+            list={gamesList}
+            onQuit={() => {
+                set_Selected("");
+            }}
+            onClick={(listItem) => {
+                set_Selected(listItem.name);
+            }}
+        />);
 
     if (selected == "")
         return (<div className='d-flex justify-content-center'>
