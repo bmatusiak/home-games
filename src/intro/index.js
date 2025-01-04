@@ -25,11 +25,16 @@ const HomeGamesIntro = () => {
         />);
 
     if (selected == "")
-        return (<div className='d-flex justify-content-center'>
-            <Button variant="primary" onClick={() => {
-                set_Selected("GamesList");
-            }}>Play Now</Button>
-        </div>)
+        return (<>
+            <div className='d-flex justify-content-center'>
+                <h1>Brad's House Games!</h1>
+            </div>
+            <div className='d-flex justify-content-center'>
+                <Button variant="primary" onClick={() => {
+                    set_Selected("GamesList");
+                }}>Play Now</Button>
+            </div>
+        </>)
 
 
     if (selected && _gamesList[selected]) {

@@ -9,11 +9,15 @@ import Quit from '../components/Quit.jsx';
 const SelectGame = (props) => {
     return (
         <>
+
+            <div className='d-flex justify-content-center'>
+                <h1>Select Game</h1>
+            </div>
             <div className='d-flex justify-content-center'>
                 <Chooser {...props} />
             </div>
 
-            <Quit {...props} />
+            <Quit {...props} title="Back" />
         </>)
 }
 
