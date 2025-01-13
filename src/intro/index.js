@@ -12,7 +12,8 @@ gamesList.forEach((value) => {
 
 const HomeGamesIntro = () => {
 
-    const [selected, set_Selected] = useState("");
+    // const [selected, set_Selected] = useState("");
+    const [selected, set_Selected] = useState("lucky-xmass");
     if (selected == "GamesList")
         return (<SelectGame
             list={gamesList}
